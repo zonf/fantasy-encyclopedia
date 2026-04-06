@@ -13,7 +13,7 @@ static var ROOT_THEME := {
 	"glow": Color("904cff")
 }
 
-static var CATEGORY_ORDER := ["demons", "ghosts", "goblins", "undead"]
+static var CATEGORY_ORDER := ["demons", "ghosts", "goblins", "undead", "ogres", "trolls", "elves", "dwarves", "orcs"]
 
 static var CATEGORIES := {
 	"demons": {
@@ -82,6 +82,91 @@ static var CATEGORIES := {
 			"text": Color("f2f0f5"),
 			"muted": Color("cbc8d0"),
 			"glow": Color("c8d0bf")
+		}
+	},
+	"ogres": {
+		"name": "Ogres",
+		"icon": "⬢",
+		"tagline": "Hill tyrants, bog-eaters, and brute kingdoms built on fear.",
+		"description": "Ogre lore centers on appetite, muscle, and the harsh landscapes that shape monstrous strength into distinct kinds of regional terror.",
+		"theme": {
+			"background_top": Color("1b120c"),
+			"background_bottom": Color("4b2f1c"),
+			"surface": Color("382317"),
+			"surface_alt": Color("694128"),
+			"accent": Color("f0a45a"),
+			"accent_soft": Color("9c5f2f"),
+			"text": Color("fff4e9"),
+			"muted": Color("e2c4ac"),
+			"glow": Color("ffb168")
+		}
+	},
+	"trolls": {
+		"name": "Trolls",
+		"icon": "⟁",
+		"tagline": "Regenerating horrors shaped by forest rot, glacial night, and ancient stone.",
+		"description": "Troll stories are about adaptation through ugliness. Each land grows its own troll, and each troll reflects the violence of that land.",
+		"theme": {
+			"background_top": Color("081711"),
+			"background_bottom": Color("184235"),
+			"surface": Color("133126"),
+			"surface_alt": Color("235543"),
+			"accent": Color("84d8a2"),
+			"accent_soft": Color("327957"),
+			"text": Color("ecfff5"),
+			"muted": Color("b8dfc9"),
+			"glow": Color("6fe3a0")
+		}
+	},
+	"elves": {
+		"name": "Elves",
+		"icon": "✧",
+		"tagline": "Ancient courts, moonlit roads, and civilizations sharpened by memory.",
+		"description": "Elven entries lean into grace, longevity, and the cultural weight of peoples who remember centuries the way others remember childhood.",
+		"theme": {
+			"background_top": Color("0a1420"),
+			"background_bottom": Color("1f3d4b"),
+			"surface": Color("14303a"),
+			"surface_alt": Color("245161"),
+			"accent": Color("a8f0d8"),
+			"accent_soft": Color("4b8f82"),
+			"text": Color("effff9"),
+			"muted": Color("bfded7"),
+			"glow": Color("8de7ca")
+		}
+	},
+	"dwarves": {
+		"name": "Dwarves",
+		"icon": "⛏",
+		"tagline": "Deep halls, oath-forged clans, and craft that outlives empires.",
+		"description": "Dwarven lore emphasizes endurance, labor, kinship, and the belief that stone, steel, and sworn word should all be made to last.",
+		"theme": {
+			"background_top": Color("15120f"),
+			"background_bottom": Color("3b2d23"),
+			"surface": Color("2b231d"),
+			"surface_alt": Color("544236"),
+			"accent": Color("e7b872"),
+			"accent_soft": Color("9b6a35"),
+			"text": Color("fff7ef"),
+			"muted": Color("dcc8b4"),
+			"glow": Color("efc17b")
+		}
+	},
+	"orcs": {
+		"name": "Orcs",
+		"icon": "⚔",
+		"tagline": "Warbands, iron law, and peoples forged where survival is never gentle.",
+		"description": "Orc traditions focus on strength, kinship, and harsh codes of honor, but different tribes turn those pressures into very different societies.",
+		"theme": {
+			"background_top": Color("180b0b"),
+			"background_bottom": Color("431a1a"),
+			"surface": Color("331515"),
+			"surface_alt": Color("5a2626"),
+			"accent": Color("e76c5d"),
+			"accent_soft": Color("8e3d37"),
+			"text": Color("fff0ee"),
+			"muted": Color("dfb7b1"),
+			"glow": Color("f37c6b")
 		}
 	}
 }
@@ -316,6 +401,336 @@ static var ARTICLES := {
 				"Zombie strengths are straightforward: they feel no pain, fear nothing, require no food, water, or rest, and they persist until physically destroyed. Headshots or decapitation are often effective, but settings vary on this point. In plague-origin scenarios, zombies also carry contagion; a bite or scratch can infect a living person, who will weaken, die, and rise again within hours or days. This exponential spread is what transforms a local incident into a civilization-ending event.",
 				"Zombies are countered by fire, bludgeoning weapons, divine magic, and disciplined defensive formations that prevent them from overwhelming a position. Clerics and paladins can turn or destroy them with channeled holy energy. Their nemeses in a broader sense are the forces of order, sanitation, and community preparedness: walls, quarantines, burn protocols, and the willingness to make brutal decisions before infection can spread.",
 				"When zombies appear in numbers, the transformation of a region is rapid and devastating. Roads become impassable. Outlying farms and villages fall silent. Refugees stream toward walled cities, carrying panic and sometimes infection with them. Markets collapse, temples overflow, and political authority fractures as leaders disagree on strategy. The zombie horde does not negotiate, does not tire, and does not stop growing. Every defender who falls is not just a loss but a reinforcement for the enemy. This grinding mathematics is a zombie apocalypse's true weapon: the certainty that time is not on your side."
+			]
+		}
+	],
+	"ogres": [
+		{
+			"id": "cave_ogre",
+			"icon": "⛏",
+			"name": "Cave Ogre",
+			"summary": "A hulking subterranean brute with lantern-pale eyes and a miner's instinct for stone, the cave ogre rules lightless tunnels through ambush, echoing roars, and territorial violence.",
+			"content": [
+				"Cave ogres are the ogres of collapsed mines, dripping caverns, and underhalls abandoned by wiser peoples. They are not merely ogres who happen to live underground; over generations, the dark reshapes them into creatures that treat stone the way sailors treat weather, reading it, fearing it, and weaponizing it. In frontier lore, they are remembered as the thing deeper tunnels eventually become about.",
+				"A cave ogre is broad even by ogre standards, with pale grey skin roughened like limestone and shoulders scarred by decades of squeezing through rock that should not accommodate something so large. Their eyes shine faintly in darkness, not with magic but with an animal sheen adapted to the black. Teeth are blunted from gnawing marrow and cave fungus as often as flesh, and their voices roll through chambers with enough force to shake dust from ceilings.",
+				"They are most known for fighting by sound and terrain. A cave ogre will strike lanterns first, hurl loose stone from ledges above, and use tunnels too narrow for organized defenders to maneuver. Miners tell stories of hearing slow breathing in a shaft for hours before realizing the shaft itself was occupied by something waiting for the light to come closer.",
+				"Cave ogres live like solitary tyrants or in small family pits clustered around water and fungus beds. They memorize tunnel networks with startling precision and often steal tools from dwarves, goblins, or desperate prospectors, not because they understand craftsmanship but because they understand utility. Their worldview is simple and territorial: the deep is hungry, and whoever can hold a chamber against that hunger deserves to keep it.",
+				"Their greatest struggle is the same darkness that protects them. Cave ogres are sensitive to open sunlight, disoriented by wide horizons, and often half-blind on the surface. Cave-ins, bad air, and the scarcity of meat underground also keep them in a constant cycle of hunger, making them crueler and more volatile than surface ogres that can simply roam for prey.",
+				"Their strengths are overwhelming in close quarters. They can see and hear well enough underground to track intruders through stone resonance, tear support beams apart with raw force, and fight through injuries that would cripple a human miner. In tunnels, a cave ogre's mass becomes an advantage; it turns corridors into choke points and uses its own body as a moving barricade.",
+				"Dwarven delvers, veteran miners, and battle mages who specialize in light and force are their natural enemies. Fire alone is useful only if it can be kept burning long enough to deny the ogre darkness, but collapsing a ceiling or sealing a tunnel is often more effective than trying to duel one on its own ground. Burrowing monsters such as purple worms also keep cave ogre populations unstable by destroying dens without warning.",
+				"When a cave ogre settles beneath a region, shafts go silent first. Pack mules refuse to descend, tools vanish from storage, and fresh stonefall appears where tunnels were sound the day before. If the problem is ignored, mining camps collapse, trade in ore and salt dries up, and whole settlements discover too late that the wealth beneath them now belongs to something stronger than law."
+			]
+		},
+		{
+			"id": "swamp_ogre",
+			"icon": "☍",
+			"name": "Swamp Ogre",
+			"summary": "A mire-born giant swaddled in reeds, mud, and rot, the swamp ogre is an ambush hunter whose patience is as dangerous as its strength.",
+			"content": [
+				"Swamp ogres belong to marshes where the land itself resists trespass. They are creatures of black water, drowned timber, and warm fog, growing massive on fish, carrion, and anything foolish enough to pole a boat too far into the reeds. In folklore they are treated less like raiders and more like natural disasters with appetites.",
+				"Their bodies are long-limbed and heavy-bellied, with skin the color of river mud and moss growing in old scars like a second pelt. Swamp ogres often braid reeds, bones, and bits of rivercraft into their hair, giving them the appearance of walking islands at a distance. Their smell is unforgettable: stagnant water, sour vegetation, and the copper hint of old blood.",
+				"They are most known for rising out of water without warning. A swamp ogre can remain submerged with only its nostrils and eyes exposed, drifting like debris until prey is within reach. Ferrymen fear the sudden hand from the cattails, the pole that jerks sideways, and the sound of a flat-bottomed boat being cracked in half like dry bark.",
+				"These ogres live in reed forts, mud mounds, or ruined watchtowers swallowed by marsh growth. They hoard practical things that survive wetness, nets, chains, hooks, cauldrons, and lengths of rope, and they understand the paths through a bog with a tracker’s intimacy. Their worldview is less territorial than opportunistic: the swamp feeds those willing to sink into it long enough.",
+				"Their struggle is the instability of their own home. Floods drown food stores, insects bring fever, and even an ogre can be dragged under by deep peat or the jaws of older swamp predators. Hunger is constant in the marsh, and the swamp ogre's brutality comes partly from knowing that one bad season can turn it from hunter to carcass.",
+				"Swamp ogres are strong swimmers, terrifying grapplers, and nearly impossible to track once they choose to vanish into mire. They throw logs instead of stones, can wade through ground that traps horses to the belly, and use the swamp's concealment better than many creatures use walls. Even a wounded swamp ogre remains dangerous because the terrain around it keeps favoring escape and counterattack.",
+				"Rangers, marsh druids, and communities that know how to burn dry channels through wetlands are their best counters. Alchemical fire, elevated walkways, and scouts willing to read water movement can neutralize some of a swamp ogre's advantages. Crocodilian monsters and swamp witches also compete with them, and those rivalries can turn a marsh into a war zone of unseen predators.",
+				"When a swamp ogre claims a bog, travel changes immediately. Barges start arriving late or not at all, fishing huts are found flattened into muck, and locals begin speaking of places on the water where even insects seem to go quiet. Leave it long enough, and a trade marsh becomes a dead marsh, mapped not by routes but by where boats disappear."
+			]
+		},
+		{
+			"id": "war_ogre",
+			"icon": "⚒",
+			"name": "War Ogre",
+			"summary": "A siege-bred giant drilled for conquest rather than simple hunger, the war ogre turns brute force into battlefield doctrine under the command of tyrants, kings, and monster generals.",
+			"content": [
+				"War ogres are what happen when ogre strength is disciplined instead of merely feared. They are raised or broken into military service by ambitious chiefs, hobgoblin legions, cruel emperors, and any power arrogant enough to believe it can point a living battering ram in the right direction. Unlike wild ogres, they are remembered not for where they lair but for which walls they brought down.",
+				"A war ogre is scarred, branded, and equipped for sustained violence. They wear fitted plates of scavenged iron, layered leather, and chain thick enough to turn arrows, often with helmets or face guards designed more to intimidate than protect. Their bodies carry the marks of training, whip scars, ritual cuts, and old fractures that healed crooked under the expectation that the ogre would be sent back to battle regardless.",
+				"They are most known for siege work and shock assaults. War ogres drag towers, uproot stakes, wrench gates from hinges, and smash breaches wide enough for infantry to flood through. Veteran soldiers know the real terror is not the first impact but the discipline afterward, the way a war ogre keeps advancing through spears because someone behind it has taught it that stopping means punishment.",
+				"Their lives are built around command structure. Some serve willingly in exchange for plunder, status, and regular food; others are enslaved, collared, or bound by oath magic. In either case, a war ogre learns the language of marching orders, drum signals, and battlefield hierarchy, understanding itself as part of an army rather than a solitary predator.",
+				"Their deepest struggle is disposability. Commanders prize war ogres for their usefulness but rarely for their survival, sending them first into arrow storms and last away from collapsing fronts. Even successful war ogres age into masses of scar tissue and pain, and many eventually revolt because they realize too late that conquest enriches everyone around them more than it ever enriches them.",
+				"Their strengths are obvious and practical: immense endurance, tolerance for pain, and training that makes them far more dangerous than ordinary ogres in formation warfare. They can wield beam-sized clubs, overturn cavalry, and continue functioning despite wounds that would kill lesser soldiers. Some armies further enhance them with stimulants, battle prayers, or crude armor enchantments.",
+				"Pikemen, engineers, and disciplined mages are the classic answers to war ogres. Trenches, caltrops, kill corridors, and concentrated volleys work better than heroic duels. Their other enemies are political, commanders who fear an ogre becoming too popular with the rank and file often arrange convenient deaths before that strength can turn into rebellion.",
+				"When war ogres appear in a campaign, everyone understands the scale of the conflict has changed. Villages on the frontier empty before the army arrives, forts double their gate braces, and rumors spread faster than scouts can ride. A host marching with war ogres is not planning to threaten a border; it is planning to erase one."
+			]
+		},
+		{
+			"id": "mountain_ogre",
+			"icon": "△",
+			"name": "Mountain Ogre",
+			"summary": "A highland titan adapted to cliff, avalanche, and thin cold air, the mountain ogre rules passes and ledges through immense strength, brutal endurance, and a shepherd's knowledge of stone.",
+			"content": [
+				"Mountain ogres live above the tree line, where slopes are steep, weather is merciless, and ordinary armies lose strength before reaching the battlefield. They are the ogres of broken passes and snow-fed valleys, infamous for demanding tribute from caravans or simply taking it in the confidence that few survivors can climb back up for revenge. To many border realms, they are less a species than a permanent problem of altitude.",
+				"They are thick-limbed and broad-chested, built to breathe thin air and keep footing on dangerous stone. Their skin ranges from weathered tan to granite grey, and their hair grows coarse and heavy like mountain goat wool. Most wear furs, chains of carved horn, and slabs of hide layered against the wind, giving them the silhouette of moving boulders wrapped in winter.",
+				"Mountain ogres are most known for controlling high routes. They roll stones with terrifying precision, stage ambushes from ridgelines, and use the threat of avalanche as both weapon and warning. Traders speak of the silence before a mountain ogre attack, when even the wind seems to wait and every loose rock suddenly feels intentional.",
+				"Unlike some ogres, these often keep family clans rather than purely solitary dens. A mountain ogre clan may hold caves, shepherd stolen herds across high meadows, and treat a pass as inherited property defended with ancestral stubbornness. Their worldview values toughness above all; to survive the heights is, in their minds, proof that the heights belong to them.",
+				"Their struggle is the mountain itself. Winters starve whole clans, landslides erase paths they relied on for years, and territorial feuds can become lethal when every mistake happens beside a cliff. They also suffer from long memory; insults, killings, and blood debts are remembered across generations because mountain communities, even monstrous ones, have little else to forget.",
+				"A mountain ogre's strengths are tied to terrain. They climb faster than their size should permit, can carry impossible loads over narrow paths, and shrug off cold that would kill pack animals overnight. In combat they hurl rock, use elevation mercilessly, and exploit defenders who are already exhausted by ascent before the fight begins.",
+				"Dwarven road-builders, griffon riders, and alpine rangers are their traditional adversaries. Fire has limited value in the open heights, but rope discipline, missile superiority, and patience can break a mountain ogre's control of a pass. Giants also feud with them from time to time, especially when the ogres trespass onto even older highland territories.",
+				"When mountain ogres become active, the effect spreads far beyond a single peak. Caravans reroute, salt and metal prices jump in the lowlands, and isolated villages find winter stores suddenly harder to secure. What begins as one raided pass can become a regional shortage, because in mountain country the loss of a road is almost the loss of a season."
+			]
+		}
+	],
+	"trolls": [
+		{
+			"id": "forest_troll",
+			"icon": "☘",
+			"name": "Forest Troll",
+			"summary": "A moss-draped predator of ancient woods, the forest troll combines obscene regeneration with a hunter's patience, making every shadowed trail feel one misstep from slaughter.",
+			"content": [
+				"Forest trolls are the embodiment of the old woodland fear that something larger than a bear is watching from just beyond the tree line. They grow where forests are wet, deep, and unlogged, especially in places where roots split old graves or ruins. Unlike civilized hunters, they do not pass through the woods; they become part of them, a recurring shape in the same dark places century after century.",
+				"They are lanky and massive at once, with long arms, knotted backs, and skin in shades of green, brown, and fungus-grey. Moss clings to their shoulders, mushrooms sprout from old wounds, and bark splinters embed in scar tissue until troll and woodland seem fused together. Their mouths open too wide, revealing teeth made for tearing game apart in handfuls rather than bites.",
+				"Forest trolls are most known for regeneration. Wounds close while the fight is still happening, severed fingers twitch toward the hand they left, and injuries that should end a battle merely make the troll angrier. Hunters who do not bring flame or acid often learn the lesson in the worst possible way: the thing they thought they killed stands back up before they finish breathing hard.",
+				"A forest troll lives like an apex ambush predator with a crude but effective understanding of territory. It marks trees, revisits game trails, and learns the habits of villages at the forest edge with unsettling care. Some keep caches of stolen tools, iron pots, and children's toys in root-hollows, less as treasure than as evidence of how long they have been studying the people nearby.",
+				"Its greatest struggle is hunger sharpened by healing. A body that rebuilds itself so quickly demands constant meat, and long lean seasons drive forest trolls into increasingly reckless raids. Fire also terrifies them at an instinctive level, creating a contradiction at the center of their existence: they are difficult to kill, but they know exactly how vulnerable they are to the right kind of pain.",
+				"Their strengths are brutal. They move quietly for creatures their size, see well in gloom, and can continue fighting while bones reset under their skin. In the forest they weaponize roots, fallen trunks, and dense undergrowth, turning a battlefield into a maze that favors something tall enough to move through brush while its prey is caught in it.",
+				"Rangers, woodsmen, fire mages, and druids willing to choose people over wilderness are the natural enemies of forest trolls. Iron traps can hold them briefly, but only sustained burning reliably finishes the job. Rival monsters such as giant spiders and territorial leshens sometimes keep them in check, though that usually leaves nearby communities with a different problem rather than a solution.",
+				"When a forest troll claims a wood, the signs spread by absence. Hunters stop finding deer in familiar places, then stop returning from those places themselves. Tree trunks are found split open at shoulder height, campfires are discovered stomped into mud, and villages begin cutting timber in frightened groups. A forest with a troll in it becomes smaller, not on maps, but in how much of it people dare use."
+			]
+		},
+		{
+			"id": "ice_troll",
+			"icon": "❄",
+			"name": "Ice Troll",
+			"summary": "A glacial horror of blue-white flesh and predatory patience, the ice troll hunts in blizzard country where cold hides its approach and preserves its monstrous strength.",
+			"content": [
+				"Ice trolls come from the far north, from glacier caves, frozen coasts, and wind-carved valleys where most civilized people can only survive by preparation and luck. They are not simply forest trolls in colder weather; the polar world has made them harder, quieter, and crueler. In winter folklore they are treated as proof that hunger itself can evolve teeth.",
+				"An ice troll's body is pale blue, chalk white, or the translucent grey of old ice shot through with dark veins. Frost crusts their brows and shoulders, and their breath spills in sheets thick enough to resemble smoke. Their claws are long and glassy, and when sunlight catches them they glitter in a way that makes the violence they cause feel almost offensively beautiful.",
+				"They are most known for combining regeneration with cold mastery. An ice troll can vanish into a snow squall, endure temperatures that freeze steel to skin, and return from wounds that would fell other monsters. Some are said to exhale a freezing gust when enraged, not true dragon breath but a blast of killing winter strong enough to numb limbs and blind exposed eyes.",
+				"Ice trolls live in loose family packs or solitary wandering circuits that follow herds, seal rookeries, and remote outposts. They are patient, saving scraps in snow pits and stalking prey for days when weather favors them. Their worldview is shaped by scarcity: mercy is foolish, abundance is temporary, and anything weaker than the cold is ultimately food.",
+				"Their struggle is competition with the very land they rule. Blizzards hide them but also bury dens, sea ice breaks without warning, and starvation is always one failed hunt away. Fire represents terror and insult to them, not only because it halts regeneration but because in the arctic any wielder of fire becomes a challenger to winter's authority.",
+				"Ice trolls are brutally strong, difficult to track, and almost impossible to exhaust in freezing weather. They climb icy faces with ease, travel through storms others cannot navigate, and use visibility loss as a weapon. Against poorly equipped opponents they hardly need tactics; the environment kills half the resistance before the troll reaches it.",
+				"Their nemeses are fire keepers, northern shamans, disciplined polar hunters, and any people skilled at denying them weather advantage. Oil, resin, explosive alchemy, and radiant magic are all effective. White dragons and frost giants sometimes slaughter ice trolls as rivals, though that usually means the region was dangerous long before the troll arrived.",
+				"When an ice troll moves near a settlement, winter starts feeling intelligent. Sled teams panic for no visible reason, fishing parties vanish in blowing snow close to home, and carcasses appear half-buried with enormous bites taken from frozen flesh. Communities respond by tightening watch rotations, rationing fuel, and praying the storm outside is only weather."
+			]
+		},
+		{
+			"id": "swamp_troll",
+			"icon": "♒",
+			"name": "Swamp Troll",
+			"summary": "A reeking, regenerative terror of bog and fen, the swamp troll turns stagnant water into cover, trap, and feeding ground for its endless appetite.",
+			"content": [
+				"Swamp trolls are the nightmare heirs of drowned forests and poisoned fens. They thrive in warm wetlands where rot is constant and the line between water and land keeps changing. Compared to ogres of the same terrain, swamp trolls are less brute landlord and more recurring infestation, a horror that keeps coming back unless dealt with decisively.",
+				"Their bodies are wide through the shoulders and slick with algae, with bellies dragging low and limbs long enough to pull them through reeds without sound. Their skin hangs in folds like wet hide, patched with leeches, fungus, and mats of weed that help them disappear in stagnant channels. When they grin, the mouth is lined with needle-sharp teeth stained black from carrion and peat.",
+				"They are most known for recovering from wounds in water. A swamp troll shoved into a bog may emerge stronger than when it entered, the mud sealing cuts while the creature sinks into cover. Their attacks often begin below the surface, with claws hooking ankles or capsizing skiffs before prey understands the water is occupied.",
+				"Swamp trolls are not sophisticated builders, but they create effective lairs in half-flooded ruins, sunken barrows, and root tangles reinforced with scavenged timber. They revisit feeding grounds repeatedly and seem to remember which villages bury their dead near soft ground. Their worldview is driven by immediacy: eat, hide, heal, and return when fear has made the prey careless again.",
+				"Their struggle is corruption from within as well as without. Constant exposure to foul water leaves many swamp trolls riddled with parasites, clouded senses, and bouts of half-mad irritation. Hunger worsens this, and older trolls sometimes become so warped by disease and regrowth that even younger swamp trolls avoid sharing territory with them.",
+				"Their strengths lie in regeneration, aquatic ambush, and the ability to keep fighting in conditions that exhaust others. They can drag armored prey through mud, navigate in darkness by vibration and scent, and shrug off ordinary wounds long enough to retreat into water. In the marsh, time itself favors them; every minute a fight drags on is another chance for the land to tire their enemies first.",
+				"Their natural enemies are fire-bearing wardens, marshfolk who know how to fight from raised ground, and priests tasked with cleansing cursed wetlands. Acidic compounds and tar fires are especially effective because they deny both healing and escape. Giant crocodiles, hydras, and hag covens also wage territorial conflict with swamp trolls, producing stretches of marsh where every dominant predator is terrible.",
+				"When swamp trolls infest a wetland, the change is first measured in routes lost. Fishermen stop using certain channels, graveyards at the marsh edge are found uprooted, and whole villages begin building houses on higher stilts. If unchecked, the swamp stops being a resource and becomes a border of fear where every ripple could mean something has healed enough to hunt again."
+			]
+		},
+		{
+			"id": "rock_troll",
+			"icon": "⬙",
+			"name": "Rock Troll",
+			"summary": "A crag-bound brute plated in stone-hard hide, the rock troll is a patient cliffside predator whose resilience makes it seem less like flesh than animate ruin.",
+			"content": [
+				"Rock trolls haunt escarpments, badlands, quarry country, and broken highlands where cliffs provide both shelter and hunting advantage. They are cousins to other trolls, but the stony places have made them slower to panic and harder to break. Travelers often mistake the first sight of one for part of the landscape, which is exactly how the troll prefers it.",
+				"A rock troll's skin grows in thick plates and ridges, like layered shale over muscle, with gravel lodged permanently in scar seams. Their coloration mirrors local stone, slate, red sandstone, pale granite, which lets them vanish against ledges even in daylight. When they move, pebbles rattle from their joints like loose armor.",
+				"They are most known for refusing to die cleanly. Blades skid, arrows splinter, and even when flesh is exposed beneath broken stone plating, the troll's regenerative tissue pushes back through the gaps. Rock trolls also weaponize the terrain with brutal competence, tearing loose boulders, collapsing scree slopes, or simply waiting above a narrow path until gravity can do most of the work.",
+				"They live in cliff caves, abandoned quarries, and canyon dens marked by bone piles whitened in open air. Rock trolls are less ravenous wanderers than stubborn holdfast creatures, returning to the same hunting grounds and defending them with near-dwarven persistence. Their worldview seems shaped by stone itself: endure pressure, give nothing away, and trust that time breaks softer things first.",
+				"Their struggle is mobility. The same dense build that makes them hard to kill leaves them clumsy in marsh, forest, or any ground that cannot support their weight. Heat can also crack their plated skin, and older rock trolls sometimes suffer entire sections of hide sloughing off after long summers, leaving them irritable, exposed, and more aggressive than usual.",
+				"Their strengths are durability, ambush from elevation, and enormous striking power. They can absorb punishment that would annihilate other trolls, brace themselves against impacts like living fortifications, and continue fighting while stone-like tissue knits over injuries. In confined mountain roads or canyon passes, a single rock troll can halt commerce for weeks.",
+				"Siege engineers, stonecutters, dwarven hammer lines, and mages who use thunder or heat are the most effective counters. Fire hurts them, but concussive force and armor-breaking blows matter just as much because their bodies rely on layered hardness. Roc nesting territories and giant clans also suppress rock troll populations by treating them as dangerous but edible nuisances.",
+				"When a rock troll takes a route, the evidence looks at first like bad luck. Wagons go over edges, fresh rockfall blocks roads, and shepherds find lookout posts smashed flat by something far stronger than weather. By the time people accept that the cliff is not merely unstable, the troll has already learned the pattern of every caravan that still dares to pass below it."
+			]
+		}
+	],
+	"elves": [
+		{
+			"id": "high_elf",
+			"icon": "✧",
+			"name": "High Elf",
+			"summary": "An aristocratic heir to ancient magical kingdoms, the high elf is defined by refinement, memory, and the dangerous belief that civilization can be perfected through will and wisdom.",
+			"content": [
+				"High elves occupy the role of the old imperial people in much fantasy: long-lived, brilliant, and burdened by the conviction that they once stood closer to perfection than anyone alive now. Their cities are towers, observatories, and white courts built where ley lines, coastlight, or mountain air feel cleanest. To allies they can seem luminous; to neighbors they can seem impossible to satisfy.",
+				"They are tall, fine-boned, and composed with a deliberate elegance that never looks accidental. Their features are sharp without harshness, their posture trained from childhood into effortless dignity, and their clothing favors layered silks, light armor, and jewelry that often doubles as a spell focus or family record. Even old age in a high elf tends to look less like decline than like a statue weathering into significance.",
+				"High elves are most known for arcane mastery, diplomacy, and impossible standards. They produce court magicians who can shape weather over estates, archivists who remember treaties signed by great-grandparents of current kings, and duelists whose discipline turns swordplay into scholarship. Their reputation comes as much from intellectual authority as from military force.",
+				"High elf culture values lineage, education, and control. A century-long project is considered respectable patience, and institutions are designed to outlast rulers rather than glorify them. From their own point of view, they are custodians of continuity in a short-lived world that rushes every decision and then wonders why it inherits chaos.",
+				"Their struggle is arrogance hardened by longevity. High elves often confuse experience with infallibility, and the long memory that preserves wisdom also preserves grudges, embarrassment, and fear of decline. Many of their crises begin when they cannot admit that a newer people, a younger mage, or a simpler solution might be right.",
+				"Their strengths are formidable: advanced spellcraft, disciplined armies, deep archives, and political patience few rivals can match. A high elf court can respond to threats with intelligence gathered over decades rather than weeks. Individually, they combine keen senses, magical aptitude, and training that turns even art into a weaponized form of excellence.",
+				"Their natural enemies include dark elves, tyrants who resent independent arcane power, and populist movements that see high elf influence as elegant domination. Dragons, too, frequently contest the same old places of power that high elves prize. Within elven society, their fiercest opposition often comes from other elves who view high elf certainty as the root of more than one historical disaster.",
+				"When high elves enter a region in force, the change is immediate but not always violent. Borders become formal, negotiations become sharper, and every local ruler realizes they are now dealing with people who remember the last time this valley changed hands. Their arrival can mean rescue, alliance, or occupation, but it always means history has walked back into the room."
+			]
+		},
+		{
+			"id": "wood_elf",
+			"icon": "❋",
+			"name": "Wood Elf",
+			"summary": "A forest-dwelling people bound to living landscapes rather than stone kingdoms, the wood elf moves through the wild with grace, ferocity, and an intimate knowledge of what the land remembers.",
+			"content": [
+				"Wood elves are the elven peoples who chose the forest over the court and never considered that choice a retreat. They belong to old groves, river canopies, and migrating woodland settlements built with the expectation that homes should bend with the land rather than command it. In many settings they are the first to notice when a forest is sick and the last to forgive those who made it so.",
+				"They are leaner and often less ornamented than their high elf kin, favoring practical beauty over ceremony. Clothing is cut for movement and weather, layered in leaf tones, bark browns, and muted greens, and many adorn themselves with feathers, beadwork, and carvings specific to clan or glade. Their movements are quiet enough that city folk often mistake discipline for magic.",
+				"Wood elves are most known for archery, scouting, and the ability to disappear into terrain that seems open to everyone else. They can read spoor like script, move through branches with unnerving speed, and fight with the confidence of people who understand every root and stream within miles. Stories about them often begin with an arrow appearing before the archer does.",
+				"Their culture is deeply local. A wood elf community may define itself by a watershed, migration route, or sacred stand of trees rather than by a fixed capital. They tend to think in seasons, generations, and ecological relationships, which makes them seem patient from the outside and immediate from within; if the forest is threatened now, then action delayed is action denied.",
+				"Their struggle lies in defending what cannot be moved. Logging roads, monster incursions, expanding farmland, and careless magic all place constant pressure on wood elf lands. They also wrestle with internal disagreement between isolationists who want the forest closed and diplomats who know that no woodland survives forever without some relationship to the world beyond it.",
+				"Wood elves are formidable in terrain they know. Their senses are sharp, their ambushes disciplined, and their survival skills allow them to wage long defensive campaigns without formal supply lines. Many also practice druidic or spirit-bound magic that blurs the boundary between warrior, healer, and guardian.",
+				"Their enemies are poachers, necromancers who despoil natural places, and empires that measure trees only in boards and tax value. Forest trolls, goblin tribes, and malignant fey also create recurring conflict. Yet one of their oldest tensions remains with high elves, whose elegant plans for the land often strike wood elves as conquest dressed in poetry.",
+				"When wood elves appear near a settlement, it usually means the land itself has become part of the politics. Roads may be closed without warning, hunters find themselves watched, and negotiations start taking place under branches older than the towns involved. Their presence signals that the forest is no longer a backdrop; it now has representatives, and they are armed."
+			]
+		},
+		{
+			"id": "dark_elf",
+			"icon": "◈",
+			"name": "Dark Elf",
+			"summary": "A people of caverns, night courts, and ruthless adaptation, the dark elf survives by turning secrecy, discipline, and subterranean hardship into a dangerous civilization of its own.",
+			"content": [
+				"Dark elves are among fantasy's most misunderstood peoples because so much of what is said about them comes from surface fear, old wars, or religious propaganda. They are the elves of the deep roads, volcanic vaults, and cities lit by fungus, crystal, and controlled fire. Whatever catastrophe or exile first drove them below, centuries underground turned survival into culture and caution into power.",
+				"They are marked by the environments that shaped them: skin in shades of obsidian, ash, violet, or iron-grey, hair pale enough to catch what little light exists below, and eyes adapted to darkness until bright day can seem like punishment. Their clothing mixes elegance with utility, layered silks, fitted leathers, and jewelry that often hides poison, keys, or rank markings invisible to outsiders.",
+				"Dark elves are most known for stealth, intrigue, and mastery of subterranean warfare. They move through cavern systems as confidently as sailors move through coastal waters, setting traps, disappearing along vertical routes, and striking where the enemy's formation means least. Their reputation for poison, assassination, and political ruthlessness is not wholly unfair, but it is also exaggerated by those who lost to them.",
+				"Their society is usually hierarchical, urban, and shaped by scarcity. Water, arable fungus fields, defensible routes, and access to trade all matter intensely underground, producing cultures where status is tied to competence as much as birth. Many dark elves see themselves not as sinister but as realistic, people forced to survive in a world where sentiment kills the unwary.",
+				"Their struggle is pressure from every side. Surface realms often assume the worst of them before contact even begins, while the underworld itself breeds constant danger from monsters, cave-ins, and resource conflict. This produces a cycle of suspicion: dark elves become secretive because trust is dangerous, and others trust them less because they are secretive.",
+				"Their strengths are exceptional. They possess keen darkvision, disciplined military traditions, expertise with toxins and subterfuge, and often a rich magical culture centered on shadow, illusion, or subterranean energies. In confined or lightless environments, they are among the most efficient fighting forces in fantasy.",
+				"Their natural enemies include dwarven underkingdoms, zealots from the surface, and monsters that contest the same tunnel networks they depend on. Some dark elf houses also spend generations feuding with each other, proving that internal politics can be as dangerous as any outside invasion. Sun-aligned magic is especially feared because it attacks both their eyes and their myths of mastery.",
+				"When dark elves become visible in a region, something significant is already happening below or beyond the horizon. Trade routes through the deep may have opened, failed, or been seized. Surface towns start hearing of missing miners, secret buyers, and torchlit figures seen where caves should have been empty. Their appearance means the hidden world is no longer staying hidden."
+			]
+		},
+		{
+			"id": "moon_elf",
+			"icon": "☽",
+			"name": "Moon Elf",
+			"summary": "A silver-lit people of tides, roads, and night magic, the moon elf is defined by motion, intuition, and a cultural bond to cycles that other peoples barely notice.",
+			"content": [
+				"Moon elves are the wanderers, mariners, and astronomer-poets of many fantasy settings, an elven people less attached to fixed capitals than to routes, seasons, and celestial patterns. They favor coasts, high observatories, island enclaves, and caravan roads that keep them under open sky. Where high elves build permanence, moon elves often build return.",
+				"They are known for pale skin or cool-toned complexions touched with silver, blue, or soft lavender, and for hair that catches lamplight like frost or moonlit water. Their clothes tend toward layered travel garments, cloaks that move well in sea wind, and jewelry set with pearl, opal, or polished nightstone. Many wear crescent motifs, but usually with genuine cultural meaning rather than mere decoration.",
+				"Moon elves are most known for navigation, night fighting, and subtle magic tied to reflection, dream, and tide. Sailors prize them as pilots, courts value them as diplomats who can move between cultures, and enemies learn that moonlight is often sufficient illumination for a moon elf ambush. Their songs and divinations are said to be strongest when the night sky is clear enough to read like a chart.",
+				"Their culture prizes adaptability and the wisdom of cycles. A moon elf is more likely to think in terms of phases than absolutes: advance and retreat, waxing fortune and waning power, departure and return. This produces societies that are often more flexible and less rigidly hierarchical than high elf courts, though no less proud of their traditions.",
+				"Their struggle is rootlessness. The same mobility that makes moon elves resilient can leave them politically vulnerable when more territorial peoples carve up the world beneath them. They also live with a reputation for inconsistency from outsiders who mistake rhythm for indecision, not understanding that a moon elf may delay action because timing, to them, is part of truth.",
+				"Moon elves excel at travel, reconnaissance, diplomacy, and magic that favors misdirection over brute force. They are comfortable operating by starlight, coordinating across long distances, and surviving in liminal spaces such as shores, passes, and borders. Many are skilled archers or dual-weapon fighters, favoring grace and angle rather than raw impact.",
+				"Their enemies tend to be slavers, pirates, abyssal things drawn by tide magic, and tyrants who resent people difficult to pin to one domain. Dark cults tied to eclipses or void deities also recur in moon elf stories as ideological opposites, worshippers of night without reverence for its balance. Even among elves, some high-born traditionalists view moon elf looseness as dangerously unserious.",
+				"When moon elves arrive in numbers, the atmosphere of a place changes before its politics do. Harbors grow busier at odd hours, observatories reopen, and rumors circulate of maps, prophecies, or alliances moving under cover of darkness. Their presence often means that a road, a coast, or a kingdom has become part of a larger pattern now visible only to those who still look up at night."
+			]
+		}
+	],
+	"dwarves": [
+		{
+			"id": "mountain_dwarf",
+			"icon": "⛏",
+			"name": "Mountain Dwarf",
+			"summary": "A cliff-born heir to fortress kingdoms and stonebound clan law, the mountain dwarf embodies endurance, disciplined craft, and the refusal to yield high ground once claimed.",
+			"content": [
+				"Mountain dwarves are the classic keepers of halls carved into peaks, ridges, and volcanic shoulders where stone itself can be shaped into nationhood. They are associated with fortress cities, deep mines, and roads that cling to impossible slopes. In fantasy history they are often the people who make the mountain traversable and then dare anyone else to dispute the toll.",
+				"They are broad, heavily built, and adapted to cold, height, and hard labor. Mountain dwarves favor layered wool, scale, and plate suited for narrow corridors and exposed winds, and their braids, clasps, and beard rings often serve as visible records of clan, rank, and oath. Their faces weather deeply but solidly, giving even youth a kind of carved seriousness.",
+				"They are most known for fortress craft, heavy infantry, and engineering feats that look impossible until someone explains the load-bearing math. Mountain dwarf masons can cut roads through cliff faces, suspend chain bridges over ravines, and design gatehouses that turn a pass into a death sentence for invaders. Their martial reputation comes not from speed but from the kind of stability that refuses to panic.",
+				"Mountain dwarf society is intensely clan-based, but not simplistic. Kinship, apprenticeship, and sworn obligation intertwine so tightly that work and identity are rarely separate. Their worldview values reliability above brilliance; a dwarf who can be counted on for forty winters is often prized more highly than one who dazzles for one season.",
+				"Their greatest struggle is inflexibility under pressure. Mountain dwarves can become so attached to tradition, route, and structure that change is treated as insult rather than adaptation. This has cost them dearly when new wars, new magic, or simple demographic decline demanded solutions their ancestors never needed.",
+				"Their strengths are endurance, defensive warfare, metallurgy, and architectural knowledge few rivals can equal. They fight well in formation, thrive in high and cold terrain, and maintain supply discipline that lets them hold sieges others would abandon. A mountain dwarf kingdom often survives not because it is stronger every day, but because it prepared for bad days better than anyone else.",
+				"Their enemies are giants, dragons, tunnel-born horrors, and any empire that covets mineral wealth without respecting the people who extracted it. Goblinoid legions and dark underkingdoms also recur as long-term rivals. Yet many mountain dwarf tragedies begin with internal feuds, because a fortress can withstand an army longer than it can withstand a civil quarrel over succession.",
+				"When mountain dwarves mobilize, the region feels it in stone and steel. Forges burn through the night, messenger goats and eagles move between holds, and high roads fill with armored columns that march as if they have always known where the battle will be. Their appearance usually means the mountains themselves have decided not to remain neutral."
+			]
+		},
+		{
+			"id": "hill_dwarf",
+			"icon": "◬",
+			"name": "Hill Dwarf",
+			"summary": "A practical, outward-looking dwarf of terraces, trade roads, and sturdy towns, the hill dwarf blends ancestral craftsmanship with a greater comfort for the open world than many of its kin.",
+			"content": [
+				"Hill dwarves occupy the middle ground between deep fortress culture and surface civilization. They build into ridges, vales, and broad hills rather than sheer mountains, creating towns that are half citadel, half market community. In many regions they are the dwarves most humans know, because they are more willing to trade, travel, and settle where roads converge.",
+				"They are somewhat shorter and less heavily armored in daily life than mountain dwarves, though still unmistakably stout. Their homespun and working leathers are practical, often dusted with flour, ore, or road grit rather than forge soot alone. Hill dwarf fashion tends to show status through workmanship and durability rather than sheer quantity of metal.",
+				"Hill dwarves are most known for reliability in trade, masonry, brewing, and civic craft. They build bridges that stay standing, mills that outlast the families who bought them, and counting houses whose ledgers are trusted because hill dwarves consider bad bookkeeping a moral failing. Their communities often become anchor points around which more transient settlements stabilize.",
+				"Their culture is more flexible and neighbor-facing than that of many other dwarven groups. Hill dwarves still care deeply about clan, oath, and reputation, but they are used to bargaining with outsiders and learning which customs can bend without breaking. Many see themselves as the practical face of dwarf-kind, the ones who keep tradition useful rather than merely sacred.",
+				"Their struggle is dilution without disappearance. Living closer to the open world brings prosperity, but it also invites assimilation, political meddling, and the slow erosion of customs that mattered intensely to older generations. Hill dwarf communities often argue over how much compromise counts as adaptation and how much counts as forgetting.",
+				"Their strengths are stamina, craftsmanship, civic organization, and an unusual ability to build coalitions across cultures. They field solid militias, maintain roads and walls effectively, and excel at the unglamorous disciplines that let a realm keep functioning under stress. Individually, hill dwarves are hard to intimidate and harder to outwork.",
+				"Their enemies tend to be raiders, corrupt tax lords, tunnel monsters pushing up from below, and anyone who mistakes friendliness for weakness. They also clash with pure traditionalists among their own kin, who sometimes view hill dwarves as too comfortable with outsiders. Orc raids along trade corridors are an especially common pressure point in hill dwarf history.",
+				"When hill dwarves take interest in a region, the signs are constructive before they are political. Roads get repaired, markets gain weight and regularity, and local rulers find that every proposal is being measured against what will still make sense twenty years from now. Their presence usually means a frontier is becoming a real country."
+			]
+		},
+		{
+			"id": "deep_dwarf",
+			"icon": "⬓",
+			"name": "Deep Dwarf",
+			"summary": "A secretive underworld dwarf forged by pressure, darkness, and ancient subterranean wars, the deep dwarf survives through discipline, silence, and a ruthless respect for necessity.",
+			"content": [
+				"Deep dwarves are the clans that delved too far to remain ordinary surface-minded folk and learned to survive what waited there. They inhabit abyssal mines, basalt vaults, lava edges, and tunnel webs where entire peoples can vanish without the surface noticing for generations. In legend they are treated with a mix of admiration and unease, because anyone who thrives that far below must have paid for the skill somehow.",
+				"They are often leaner than mountain dwarves, with pale or ash-toned skin, eyes adapted to darkness, and clothing built to silence rather than ceremony. Their armor is matte, close-fitted, and designed for tunnels where reflected torchlight can be a liability. Deep dwarves favor engraved stone, black iron, and subdued clan marks visible only at close range.",
+				"They are most known for mining in impossible places, stone sense, and warfare suited to darkness and confined ground. Deep dwarf sappers can hear flaws in a wall before striking it, map tunnel temperatures by touch, and collapse an enemy advance with terrifying efficiency. Their reputation among outsiders is often that of grim specialists who appear only when something under the earth has gone catastrophically wrong.",
+				"Their worldview is shaped by scarcity and vigilance. Underground, light, water, air, and stable routes are resources as critical as gold, so deep dwarf societies prize discipline and collective responsibility with almost military intensity. To them, carelessness is not a personal flaw; it is a public hazard.",
+				"Their struggle is severity. A people built to survive the deep can become so controlled and suspicious that ordinary warmth begins to feel like weakness. Many deep dwarves also live with inherited trauma from wars against dark elves, nameless horrors, and older things that never cared whether the dwarves understood them.",
+				"Their strengths include dark-adapted senses, engineering under pressure, formidable tunnel fighting, and a refusal to panic in conditions that shatter surface troops. They excel at siege and counter-siege below ground, and their endurance lets them labor and fight where air is thin, heat is intense, or darkness is total. Few peoples are better at making hostile environments usable.",
+				"Their enemies are underworld empires, cavern beasts, and greedy surface powers who think the deep can be exploited without understanding it. Deep dwarves also remain in recurrent conflict with demons, elemental incursions, and cults trying to open what should stay sealed. Sunlit diplomacy is difficult for them, but not impossible; their hardest negotiations are often with fear rather than with other nations.",
+				"When deep dwarves surface in numbers, everyone pays attention. Mines close, scholars start comparing old maps, and rulers ask the same question with increasing urgency: what followed them up? Their arrival rarely means exploration alone. It usually means a danger below has outgrown secrecy and is now becoming the surface world's problem too."
+			]
+		},
+		{
+			"id": "forge_dwarf",
+			"icon": "⚒",
+			"name": "Forge Dwarf",
+			"summary": "A master of sacred industry and weaponcraft, the forge dwarf treats the anvil as altar, turning labor, fire, and precision into a civilization-defining art.",
+			"content": [
+				"Forge dwarves are the clans and castes most completely organized around metalwork, foundries, and the theology of making. While many dwarves revere craft, forge dwarves elevate it into central identity, measuring worth by what one can shape, temper, repair, or improve. Their cities are known by their smoke columns, furnace glow, and the sound of industry continuing long after other peoples would sleep.",
+				"They dress for heat, sparks, and authority. Aprons reinforced with chain, thick gloves, sleeveless work tunics, and ceremonial smith masks are common, as are burn scars worn without shame. Even their jewelry tends to be engineered rather than merely decorative, clever clasps, articulated rings, and torque pieces that demonstrate skill the way a warrior displays trophies.",
+				"Forge dwarves are most known for producing legendary arms, precision tools, and mechanisms that seem too robust to belong to ordinary history. Kings seek their armor, temples commission their bells and gates, and adventurers dream of winning one of their masterwork blades. But among forge dwarves themselves, the highest praise often goes not to a weapon but to a tool that never fails in honest labor.",
+				"Their culture is intensely guild-driven. Apprenticeship, mastery, and inheritance of technique matter as much as bloodline, and a forge dwarf may owe more daily loyalty to workshop and patron than to clan branch. Their worldview treats creation as moral action: to make something true and lasting is to push back against decay.",
+				"Their struggle is overproduction of purpose. A society so centered on work can neglect tenderness, leisure, and anything not easily measured in output or excellence. Forge dwarves also attract war, because the better their craft becomes, the more rulers, conquerors, and thieves decide that possessing the smith is easier than earning the weapon.",
+				"Their strengths are obvious but extraordinary: metallurgical genius, industrial organization, resistance to heat, and the ability to maintain logistics through craft rather than conquest. They repair faster than others replace, improvise from stockpiles with startling speed, and understand the material limits of armor, bridges, gates, and engines better than almost any people in fantasy.",
+				"Their enemies include slavers, raiding empires, sabotage-minded rivals, and fire creatures that resent mortals mastering flame through discipline rather than worship. They also clash with traditionalists who think forge dwarves risk reducing sacred craft to commerce. In wartime, spies become one of their deadliest threats because a stolen blueprint can harm a kingdom as surely as a stolen relic.",
+				"When forge dwarves involve themselves in a conflict or region, production surges before banners do. Warehouses fill, contracts multiply, and the balance of power shifts because one side suddenly stops running out of steel. Their presence means that war, rebuilding, or both are about to become much more efficient."
+			]
+		}
+	],
+	"orcs": [
+		{
+			"id": "blood_orc",
+			"icon": "☄",
+			"name": "Blood Orc",
+			"summary": "A war-marked orc of lineage oaths and battle frenzy, the blood orc binds identity to ancestry, vengeance, and the belief that spilled blood remembers who spilled it.",
+			"content": [
+				"Blood orcs are the orc peoples who root culture most strongly in descent, war memory, and the sacred meaning of violence. They are often found on red plains, badlands, and scarred borderlands where every clan can recite who wronged it and why the debt still stands. To outsiders they seem born for war; to themselves they are keepers of blood obligations no one else bothers to honor.",
+				"They are heavily built and visibly adorned with lineage. Scarification, painted war glyphs, braided trophies, and red-dyed cloth are common, each mark often denoting family, oath, victory, or mourning. Their armor ranges from brutal hide-and-iron harness to beautifully maintained heirloom pieces passed through generations of fighters.",
+				"Blood orcs are most known for ferocity in close combat and the ritual intensity of their war culture. Many enter controlled battle frenzies through chant, drum, or inherited techniques that sharpen aggression without dissolving discipline entirely. Enemies remember the first charge, but veterans fear the aftermath more, when blood orcs begin naming the dead and turning a battle into a generational feud.",
+				"Their society is built on kin, oath, and public memory. Elders, war leaders, and spirit-keepers all play roles in deciding when blood debt justifies action and when restraint honors the clan more. From within, this system is not random brutality but moral accounting, a harsh answer to living in a world where weakness invites erasure.",
+				"Their struggle is inheritance. Blood orcs can become trapped by past violence, forced to carry forward grudges shaped by grandparents they never met. Young blood orcs often wrestle with whether loyalty means repeating old wars or being strong enough to end them, and that tension can split clans as sharply as any outside attack.",
+				"Their strengths include brutal courage, kin-based cohesion, and a battlefield psychology built around momentum and reputation. They recover from hardship quickly, fight effectively even when wounded, and draw deep reserves of will from ritual and shared identity. Against timid or poorly led foes, their sheer certainty can feel as dangerous as their axes.",
+				"Their enemies are longstanding rival clans, imperial forces seeking to pacify frontier regions, and any manipulator who profits by keeping blood debts active. Paladins and law-bound kingdoms often clash with them because blood orc justice refuses to remain tidy or centralized. Yet the sharpest danger sometimes comes from shamans or chiefs within the culture who find perpetual vengeance politically convenient.",
+				"When blood orcs ride for war, the warning arrives in ritual before steel. Messenger totems appear, drums carry across valleys, and border settlements hear the names of old grievances spoken again as if no time has passed. Their appearance means the past has decided to collect."
+			]
+		},
+		{
+			"id": "iron_orc",
+			"icon": "⛓",
+			"name": "Iron Orc",
+			"summary": "A regimented orc of foundry, fortress, and iron law, the iron orc turns martial culture into organized state power backed by industry and uncompromising discipline.",
+			"content": [
+				"Iron orcs are the answer to every lazy assumption that orcs cannot build. They are fortress makers, armorers, and war planners who take the raw strength of orcish culture and bind it to infrastructure, command, and production. Their domains are often black-fort cities, smelter valleys, and heavily defended borders where ambition has been given walls.",
+				"They present themselves with deliberate severity. Iron orcs favor riveted armor, hard-edged silhouettes, shaved or tightly bound hair, and symbols stamped into plate rather than embroidered into cloth. Soot, oil, and forge heat shape their appearance as much as battle does, giving them the look of soldiers assembled out of both flesh and machinery.",
+				"They are most known for discipline. Iron orc hosts march in formation, maintain supply chains, and build siege lines with a grim professionalism that catches more romantic enemies off guard. They are also famous smiths in their own right, producing practical, durable weapons designed to survive campaigns rather than impress a court.",
+				"Their society is often hierarchical, legalistic, and organized around service. Rank may come through birth, merit, or military achievement depending on the realm, but in all cases iron orcs tend to respect clear structure over personal theatrics. From their perspective, discipline is not the enemy of strength; it is the only reason strength matters for longer than one battle.",
+				"Their struggle is rigidity. Systems that make iron orcs powerful in war can make them brittle in peace, and leaders who prize order too highly may mistake obedience for stability. Internal dissent is often suppressed until it erupts explosively, because iron orc states are excellent at containing problems and notoriously bad at admitting them early.",
+				"Their strengths include heavy infantry, industrial capacity, engineering, and the social cohesion required to sustain long campaigns. Individually they are powerful warriors; collectively they are far more dangerous, because their logistics allow them to keep pressure on enemies long after raider cultures would need to disperse. They win not only by impact but by endurance.",
+				"Their enemies are dwarven holds, free cities that resist annexation, and rival orc peoples who reject central authority. Saboteurs, famine, and resource shortages can threaten them more effectively than open battle because so much of their strength depends on organized output. Air power, mountain warfare, and magical disruption of industry are traditional counters.",
+				"When iron orcs turn toward a frontier, the signs are industrial as much as military. Timber disappears into palisades, roads are measured for weight, and smoke rises where camps should be temporary. Their presence means conquest is being planned as administration, not as a raid."
+			]
+		},
+		{
+			"id": "savage_orc",
+			"icon": "🜂",
+			"name": "Savage Orc",
+			"summary": "A hard-living orc of wilderness clans and survivalist ferocity, the savage orc fights with primal aggression, deep environmental knowledge, and a refusal to be civilized on anyone else's terms.",
+			"content": [
+				"Savage orc is the name settled peoples give to clans that remain fiercely tied to wilderness, migration, and direct survival rather than fortress or court. The label is usually meant as insult, but it obscures more than it explains. These orcs are often the most ecologically intelligent of their kind, shaped by steppe, scrubland, jungle, or storm coast into cultures that regard softness as the one unforgivable luxury.",
+				"They tend to wear what can be made, carried, or repaired on the move: hide, bone, stitched leather, scavenged metal, and trophies with practical meaning. Their bodies are marked by weather, travel, and hunting rather than industrial labor. Even ceremonial attire often looks battle-ready because in their world ceremony and danger seldom sit far apart.",
+				"Savage orcs are most known for sudden violence and apparent unpredictability. They strike fast, exploit terrain mercilessly, and seem willing to risk themselves in ways conventional troops find irrational. The truth is usually harsher and smarter: a savage orc clan has already measured the land, the weather, and the prey before the first shout is heard.",
+				"Their culture values strength, adaptability, and the ability to contribute under hardship. Leadership is often earned through hunting success, raid skill, spiritual authority, or the capacity to keep people alive when resources collapse. From within, they do not see themselves as lawless but as unburdened by the fragile formalities of city peoples.",
+				"Their struggle is external contempt and internal scarcity. Settled nations use the word savage to justify extermination or dispossession, while drought, herd failure, and monster pressure can force whole clans into desperate migration. This means savage orcs are often judged at their hungriest and treated as proof of a nature that might have looked very different in security.",
+				"Their strengths are mobility, ferocity, fieldcraft, and an extraordinary ability to keep functioning with minimal supply. They can live off harsh ground, fight effectively in dispersed formations, and exploit storms, darkness, or rough terrain that slow heavier armies. Many also maintain strong oral traditions, tactical memory carried in story rather than on parchment.",
+				"Their enemies are settler militias, rival nomad peoples, monsters competing for the same wilderness, and centralized states eager to erase any group difficult to tax or govern. Disease and starvation can be as deadly as war. Shamans who exploit fear also pose danger, because in desperate times any voice promising strength can gather followers too quickly.",
+				"When savage orcs move into a region, the landscape becomes readable in a new and threatening way. Herds change direction, watchfires appear on ridges that were empty yesterday, and patrols find themselves outmaneuvered by people without roads. Their presence means the frontier has stopped being theoretical."
+			]
+		},
+		{
+			"id": "shadow_orc",
+			"icon": "☗",
+			"name": "Shadow Orc",
+			"summary": "A night-bound orc shaped by secrecy, omen, and ruthless stealth, the shadow orc turns fear, darkness, and disciplined silence into a form of warfare all its own.",
+			"content": [
+				"Shadow orcs are the least understood of the major orc peoples, in part because misunderstanding is one of their preferred weapons. They dwell in black pine ranges, eclipse-haunted valleys, cavern borderlands, and other places where night lingers longer than it should. Where many orcs make strength visible, shadow orcs prove it by how little they need to reveal.",
+				"They are leaner than many of their kin, with dark skin tones, muted gear, and adornment chosen for silence over spectacle. Cloaks, wrapped weapons, soot-dark armor, and face markings that break up recognition in moonlight are common. Their eyes often seem to catch and hold dim light in ways witnesses find deeply unsettling.",
+				"Shadow orcs are most known for stealth raids, assassination, and war conducted through nerves as much as casualties. They cut pickets, poison certainty, and prefer to let a settlement imagine ten times the number actually watching it. Their legends are full of gates opened from within, command tents entered without alarm, and enemies who broke because sleep had become impossible.",
+				"Their society prizes discipline, silence, and the proper use of fear. Far from being anarchic, many shadow orc clans maintain strict rites around scouting, oath-keeping, and the withholding of unnecessary speech. To them, noise is not confidence but waste, and a plan announced too proudly is already half-lost.",
+				"Their struggle is reputation bordering on self-fulfilling curse. Once feared as treacherous, shadow orcs may find open diplomacy nearly impossible even when they want it. Living in secrecy also breeds internal paranoia, and some clans become so committed to hidden knowledge that trust shrinks until leadership rests on manipulation more than respect.",
+				"Their strengths include night fighting, infiltration, patience, and tactical intelligence gathered through observation rather than brute scouting. They are skilled with short blades, bows, garrotes, and ambush doctrine, but their greatest weapon is often psychological: they make enemies feel penetrable before the real attack begins. Against complacent defenders, that alone can win campaigns.",
+				"Their enemies are vigilant rangers, sun-priests, disciplined watch commanders, and any society capable of denying them darkness advantage through magical light or relentless patrol structure. They also clash with other orc peoples who see shadow methods as dishonorable or destabilizing. Within shadow clans, zealots devoted to void powers are a constant danger, because secrecy and nihilism make a volatile mix.",
+				"When shadow orcs enter a region, fear arrives before facts. Signal fires fail, couriers disappear, and no one agrees on how many enemies there are or where they came from. Their presence means the night has become operational, and every door now closes with more imagination than certainty."
 			]
 		}
 	]

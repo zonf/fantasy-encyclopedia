@@ -185,24 +185,25 @@ func _create_nav_button(symbol: String, caption: String, target_page: String) ->
 	button.flat = true
 	button.focus_mode = Control.FOCUS_NONE
 	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	button.custom_minimum_size = Vector2(0, 66)
+	button.custom_minimum_size = Vector2(0, 62)
 	button.pressed.connect(_open_root_page.bind(target_page))
 
 	var margin := MarginContainer.new()
 	margin.set_anchors_preset(Control.PRESET_FULL_RECT)
 	margin.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	margin.add_theme_constant_override("margin_left", 6)
-	margin.add_theme_constant_override("margin_top", 6)
+	margin.add_theme_constant_override("margin_top", 4)
 	margin.add_theme_constant_override("margin_right", 6)
-	margin.add_theme_constant_override("margin_bottom", 6)
+	margin.add_theme_constant_override("margin_bottom", 4)
 	button.add_child(margin)
 
 	var stack := VBoxContainer.new()
 	stack.alignment = BoxContainer.ALIGNMENT_CENTER
 	stack.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	stack.add_theme_constant_override("separation", 0)
 	margin.add_child(stack)
 
-	var icon_label := _make_label(symbol, 18, Color.WHITE, HORIZONTAL_ALIGNMENT_CENTER)
+	var icon_label := _make_label(symbol, 30, Color.WHITE, HORIZONTAL_ALIGNMENT_CENTER)
 	var text_label := _make_label(caption, 12, Color.WHITE, HORIZONTAL_ALIGNMENT_CENTER)
 	stack.add_child(icon_label)
 	stack.add_child(text_label)
@@ -432,13 +433,9 @@ func _create_home_hero() -> PanelContainer:
 	logo_img.texture = LOGO_TEX
 	logo_img.expand_mode = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
 	logo_img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	logo_img.custom_minimum_size = Vector2(100, 100)
+	logo_img.custom_minimum_size = Vector2(140, 140)
 	logo_img.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	stack.add_child(logo_img)
-
-	var spacer_a := Control.new()
-	spacer_a.custom_minimum_size = Vector2(0, 4)
-	stack.add_child(spacer_a)
 
 	stack.add_child(_make_spaced_label("FANTASY", 30, _theme_color("text"), HORIZONTAL_ALIGNMENT_CENTER))
 	stack.add_child(_make_spaced_label("ENCYCLOPEDIA", 18, _theme_color("text"), HORIZONTAL_ALIGNMENT_CENTER))
@@ -468,7 +465,7 @@ func _create_category_hero(category: Dictionary) -> PanelContainer:
 	return panel
 
 
-func _create_article_hero(article: Dictionary, category_key: String) -> PanelContainer:
+func _create_article_hero(article: Dictionary, _category_key: String) -> PanelContainer:
 	var panel := PanelContainer.new()
 	panel.add_theme_stylebox_override("panel", _panel_style(_surface_alt_color(0.88), _border_color(0.45), 26, 1))
 
