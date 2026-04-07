@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4fdgjkdqreo8"
-path="res://.godot/imported/beholder.png-8f342f0d591dd7acd60c3a24ab851694.ctex"
+uid="uid://c66rhbjj3xcoa"
+path="res://.godot/imported/poltergeist.png-ad0f99f04e6e8fb8c6369da3ef830e8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/beholder.png"
-dest_files=["res://.godot/imported/beholder.png-8f342f0d591dd7acd60c3a24ab851694.ctex"]
+source_file="res://assets/monsters/poltergeist.png"
+dest_files=["res://.godot/imported/poltergeist.png-ad0f99f04e6e8fb8c6369da3ef830e8f.ctex"]
 
 [params]
 

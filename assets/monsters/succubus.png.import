@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccg0wr00eserb"
-path="res://.godot/imported/skeleton.png-50ae9d6f346a7527bcb5fd6e4137620d.ctex"
+uid="uid://bh18htbarhfdn"
+path="res://.godot/imported/succubus.png-3545d6dcc97b767c698302fe492c8174.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/skeleton.png"
-dest_files=["res://.godot/imported/skeleton.png-50ae9d6f346a7527bcb5fd6e4137620d.ctex"]
+source_file="res://assets/monsters/succubus.png"
+dest_files=["res://.godot/imported/succubus.png-3545d6dcc97b767c698302fe492c8174.ctex"]
 
 [params]
 

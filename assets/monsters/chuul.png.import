@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d17wqx8tof8om"
-path="res://.godot/imported/image.png-6936ba0631249d5dab3f39fe513429f3.ctex"
+uid="uid://yfo2lrg66tl6"
+path="res://.godot/imported/chuul.png-726edbb225334df612ae3343e025e414.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/image.png"
-dest_files=["res://.godot/imported/image.png-6936ba0631249d5dab3f39fe513429f3.ctex"]
+source_file="res://assets/monsters/chuul.png"
+dest_files=["res://.godot/imported/chuul.png-726edbb225334df612ae3343e025e414.ctex"]
 
 [params]
 

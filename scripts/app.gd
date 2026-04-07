@@ -1,8 +1,12 @@
 extends Control
 
 const FantasyDataRef = preload("res://scripts/fantasy_data.gd")
-const PLACEHOLDER_TEX = preload("res://assets/categories/image.png")
-const LOGO_TEX = preload("res://assets/categories/logo.png")
+const PLACEHOLDER_TEX = preload("res://assets/monsters/image.png")
+const LOGO_TEX = preload("res://assets/monsters/logo.png")
+const MONSTER_IMAGE_DIR := "res://assets/monsters/"
+const MONSTER_IMAGE_ALIASES := {
+	"mind_flayer": "mind-flyer"
+}
 
 const PAGE_HOME := "home"
 const PAGE_EXPLORE := "explore"
@@ -34,6 +38,7 @@ var content_scroll: ScrollContainer
 var content_box: VBoxContainer
 var bottom_bar: PanelContainer
 var nav_buttons: Dictionary = {}
+var monster_texture_cache: Dictionary = {}
 
 
 func _ready() -> void:
@@ -486,7 +491,7 @@ func _create_article_hero(article: Dictionary, _category_key: String) -> PanelCo
 
 	var image_center := CenterContainer.new()
 	image_panel.add_child(image_center)
-	var img := _create_placeholder_image(72, 72)
+	var img := _create_article_image(str(article.get("id", "")), 72, 72)
 	image_center.add_child(img)
 
 	stack.add_child(_make_label(str(article.get("name", "Article")), 28, _theme_color("text"), HORIZONTAL_ALIGNMENT_LEFT))
@@ -506,7 +511,7 @@ func _create_feature_card(article: Dictionary, category_key: String) -> PanelCon
 	row.add_theme_constant_override("separation", 14)
 	margin.add_child(row)
 
-	var img := _create_placeholder_image(52, 52)
+	var img := _create_article_image(str(article.get("id", "")), 52, 52)
 	row.add_child(img)
 
 	var body := VBoxContainer.new()
@@ -580,7 +585,7 @@ func _create_article_list_card(article: Dictionary, category_key: String) -> Pan
 	row.add_theme_constant_override("separation", 14)
 	margin.add_child(row)
 
-	var img := _create_placeholder_image(52, 52)
+	var img := _create_article_image(str(article.get("id", "")), 52, 52)
 	row.add_child(img)
 
 	var body := VBoxContainer.new()
@@ -659,6 +664,51 @@ func _create_chip(text: String) -> PanelContainer:
 	chip.add_child(margin)
 	margin.add_child(_make_label(text, 12, _theme_color("muted"), HORIZONTAL_ALIGNMENT_CENTER))
 	return chip
+
+
+func _create_article_image(article_id: String, w: int, h: int) -> TextureRect:
+	var img := TextureRect.new()
+	img.texture = _get_article_texture(article_id)
+	img.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	img.custom_minimum_size = Vector2(w, h)
+	return img
+
+
+func _get_article_texture(article_id: String) -> Texture2D:
+	var texture_key := _get_article_texture_key(article_id)
+	if texture_key.is_empty():
+		return PLACEHOLDER_TEX
+
+	var texture_path := MONSTER_IMAGE_DIR + texture_key + ".png"
+	if monster_texture_cache.has(texture_path):
+		return monster_texture_cache[texture_path]
+
+	if not FileAccess.file_exists(texture_path):
+		return PLACEHOLDER_TEX
+
+	var texture := load(texture_path) as Texture2D
+	if texture == null:
+		return PLACEHOLDER_TEX
+
+	monster_texture_cache[texture_path] = texture
+	return texture
+
+
+func _get_article_texture_key(article_id: String) -> String:
+	var candidates := [
+		str(MONSTER_IMAGE_ALIASES.get(article_id, "")),
+		article_id,
+		article_id.replace("_", "-")
+	]
+	var seen := {}
+	for candidate in candidates:
+		if candidate.is_empty() or seen.has(candidate):
+			continue
+		seen[candidate] = true
+		if FileAccess.file_exists(MONSTER_IMAGE_DIR + candidate + ".png"):
+			return candidate
+	return ""
 
 
 func _create_placeholder_image(w: int, h: int) -> TextureRect:

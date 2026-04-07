@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqr7n4u163lui"
-path="res://.godot/imported/spider.png-16e7ad20785388b4f99a1e03b8166db6.ctex"
+uid="uid://c4fdgjkdqreo8"
+path="res://.godot/imported/beholder.png-af12c581b2b883fbba71f16edca05163.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/spider.png"
-dest_files=["res://.godot/imported/spider.png-16e7ad20785388b4f99a1e03b8166db6.ctex"]
+source_file="res://assets/monsters/beholder.png"
+dest_files=["res://.godot/imported/beholder.png-af12c581b2b883fbba71f16edca05163.ctex"]
 
 [params]
 

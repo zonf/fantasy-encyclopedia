@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1ikrcvk0ct3l"
-path="res://.godot/imported/vampire.png-4f2a52c50fd216e96d5d7b1b7eac0bdb.ctex"
+uid="uid://wlvwh38gfe1i"
+path="res://.godot/imported/medusa.png-d87551923851ebd7b7ffa175b979cfa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/vampire.png"
-dest_files=["res://.godot/imported/vampire.png-4f2a52c50fd216e96d5d7b1b7eac0bdb.ctex"]
+source_file="res://assets/monsters/medusa.png"
+dest_files=["res://.godot/imported/medusa.png-d87551923851ebd7b7ffa175b979cfa2.ctex"]
 
 [params]
 

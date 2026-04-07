@@ -13,7 +13,7 @@ static var ROOT_THEME := {
 	"glow": Color("904cff")
 }
 
-static var CATEGORY_ORDER := ["demons", "ghosts", "goblins", "undead", "ogres", "trolls", "elves", "dwarves", "orcs"]
+static var CATEGORY_ORDER := ["demons", "aberrations", "ghosts", "goblins", "undead", "ogres", "trolls", "elves", "dwarves", "orcs"]
 
 static var CATEGORIES := {
 	"demons": {
@@ -31,6 +31,23 @@ static var CATEGORIES := {
 			"text": Color("fff0eb"),
 			"muted": Color("efb7aa"),
 			"glow": Color("ff7459")
+		}
+	},
+	"aberrations": {
+		"name": "Aberrations",
+		"icon": "◉",
+		"tagline": "Eye tyrants, alien intellects, and deep things shaped by impossible worlds.",
+		"description": "Aberration lore leans into minds and bodies that do not belong to natural creation. Their stories are about warped reason, invasive hunger, and the terror of something that sees the world by utterly different laws.",
+		"theme": {
+			"background_top": Color("07131b"),
+			"background_bottom": Color("16384a"),
+			"surface": Color("102734"),
+			"surface_alt": Color("1b4459"),
+			"accent": Color("7ee0c6"),
+			"accent_soft": Color("2f7c72"),
+			"text": Color("ecfffb"),
+			"muted": Color("b8ddd6"),
+			"glow": Color("65d8c1")
 		}
 	},
 	"ghosts": {
@@ -219,6 +236,88 @@ static var ARTICLES := {
 				"A succubus's strengths are her adaptability, her patience, and her near-perfect ability to read people. She can shift her shape, charm weak-willed individuals with a glance, resist most physical attacks, and teleport away from danger. But her most potent weapon is information. A succubus who has spent months inside a royal court knows every secret affair, every buried scandal, every loyalty that exists only on the surface.",
 				"Her natural enemies are clerics and paladins whose divine insight can pierce her disguises, and warlocks or wizards skilled enough to detect charm effects. Celestial beings, particularly angels devoted to truth and revelation, are her most dangerous nemeses. A succubus will go to extraordinary lengths to avoid a direct confrontation with such opponents, preferring to undermine them through their mortal allies instead.",
 				"When a succubus has been operating in a community, the signs are subtle but devastating. Key leaders make inexplicable decisions. Old friendships dissolve into suspicion. A once-stable court begins to fracture along lines of jealousy and paranoia. By the time her presence is discovered, the damage is structural, woven into relationships and decisions that cannot simply be undone by banishing her. The corruption she leaves behind often outlasts her by generations."
+			]
+		}
+	],
+	"aberrations": [
+		{
+			"id": "beholder",
+			"icon": "◉",
+			"name": "Beholder",
+			"summary": "A floating tyrant of flesh, eyes, and unchallenged paranoia, the beholder dominates whatever lair it claims through disintegration rays, enslaving terror, and a mind so alien it treats every other creature as either servant, rival, or mistake.",
+			"content": [
+				"Beholders are among the most infamous aberrations in fantasy because they feel less like animals or even monsters than self-contained worlds of madness. They drift through the dark on no visible force, enormous spherical beings crowned with eyestalks and armed with a central gaze that can nullify magic itself. In most traditions, a beholder is not part of a species so much as a recurring nightmare of creation, a thing that should never have been possible and therefore never learned restraint.",
+				"A beholder's body is instantly recognizable and nearly impossible to forget. It is a floating orb of rubbery flesh dominated by one huge, lidless eye and a fang-lined mouth set beneath it like a wound that learned to speak. Ten eyestalks writhe and angle independently, each tracking targets with unnerving precision. Their skin comes in pallid, mottled hues of bruised purple, swamp green, or corpse-white, and even when still they give the impression of constant motion, as though thought itself is rippling through their flesh.",
+				"They are most known for their eye rays, each one a different expression of violation: disintegration, petrification, domination, telekinetic force, sleep, fear, and worse besides depending on the tale. Adventurers speak of them as walking arsenals with no need for limbs or weapons, because every angle around a beholder is an angle of attack. Just as famous is the antimagic cone projected by the central eye, which strips away enchanted advantages and leaves even master wizards feeling abruptly mortal.",
+				"A beholder's worldview is defined by absolute narcissism and universal suspicion. It considers itself the pinnacle of existence and assumes every other being is plotting either theft, assassination, or humiliation. This paranoia makes beholders obsessive planners. Their lairs are engineered with vertical shafts, deadfalls, murder holes, and blind corners designed for a floating creature to navigate effortlessly while ground-bound intruders are funneled into death.",
+				"Their greatest struggle is that they are prisoners of their own minds. A beholder can imagine threats faster than it can solve them, and its fear of imperfection often turns servants into corpses and alliances into wars before either was necessary. Some legends hold that beholders dream other beholders into existence, only to hate them instantly as intolerable rivals. Few monsters are so powerful while also being so fundamentally incapable of peace.",
+				"What makes a beholder truly terrifying is the combination of firepower, mobility, and control. It can hover beyond reach, dominate a victim into treachery, erase stone with a glance, and suppress magic in the same breath of battle. In its own lair, where tunnels are cut for floating movement and floor-bound tactics fail, a single beholder can defend itself against parties that would rout entire armies of lesser monsters.",
+				"Beholders are opposed by foes capable of enduring chaos and exploiting the creature's need for control. Anti-aberration cults, disciplined adventuring companies, and wizards who can fight without leaning entirely on magic are among their best counters. Their natural enemies also include other beholders, because few rivalries in fantasy are more immediate or more homicidal than two eye tyrants deciding the same reality has room for only one of them.",
+				"When a beholder settles beneath a city, inside a ruin, or at the heart of a dungeon, the region slowly reorganizes around its paranoia. Tunnels expand in impossible directions, monsters in the area begin acting like terrified vassals, and disappearances multiply among anyone who strays too close to hidden entrances. A beholder's presence means that what looked like wilderness or ruin is now an intelligence network ruled by something that never stops watching."
+			]
+		},
+		{
+			"id": "gazer",
+			"icon": "◌",
+			"name": "Gazer",
+			"summary": "A jittering lesser eye-beast born from stray beholder dreams, the gazer is a hovering nuisance made dangerous by loyalty, mimic cunning, and enough aberrant magic to turn underestimation into a fatal mistake.",
+			"content": [
+				"Gazers are often described as miniature beholders, but that comparison hides how uncanny they truly are. They are lesser aberrations shaped by the same impossible logic as eye tyrants, sometimes said to be dream-spawn, rejected offspring, or magical imitations that acquired appetites of their own. Small enough to fit through collapsed masonry and quick enough to vanish into cluttered ceilings, gazers occupy the lowest but most persistent rung of aberrant infestation.",
+				"A gazer resembles a floating orb of flesh roughly the size of a melon or lantern, with a single large eye, a toothed little mouth, and four twitching eyestalks that seem unable to settle on one direction for long. Their bodies bob and pivot with insect-like nervousness, and their skin often shines with the damp sheen of something raised in caverns rather than sunlight. Up close, they are strangely expressive, petulant, curious, and hateful in ways that feel disturbingly intelligent.",
+				"They are most known for serving stronger aberrations, especially beholders, as scouts, spies, and disposable attendants. A gazer's eye magic is weaker than that of its greater kin, but not harmless; small rays can daze, burn, shove, or numb a target at just the wrong moment. Many seasoned delvers learn too late that the real danger of a gazer is not raw power but how efficiently it helps something bigger kill you.",
+				"A gazer lives for attention, approval, and scraps of authority. When attached to a beholder or other powerful master, it behaves with slavish devotion punctuated by sudden cruelty toward anything below it in rank. When left to its own devices, it prowls abandoned towers, sewer vaults, and arcane ruins like a feral familiar, collecting shiny trash, nesting in rafters, and treating every intrusion as either entertainment or insult.",
+				"Its struggle is smallness in a world of larger horrors. Gazers possess enough awareness to want status, but rarely enough power to secure it honestly. They are bullied by stronger aberrations, hunted by adventurers who regard them as pests, and driven by frantic insecurity to prove they matter. That mix of dependence and resentment gives them a mean, unstable streak out of all proportion to their size.",
+				"Their strengths are speed, maneuverability, and irritatingly good positioning. A gazer can hover just beyond a sword stroke, dart behind beams or stalactites, and harass a target until concentration fails or formation breaks. In swarms or alongside a stronger master, they become force multipliers, small floating saboteurs that make every fight messier and every spellcaster less certain of finishing a cast.",
+				"Gazers are preyed upon by raptors, bats of unusual size, and dungeon predators quick enough to snatch them from the air, but their true nemeses are disciplined exterminators who refuse to be distracted by their antics. Rangers, delvers with polearms, and mages carrying area effects rather than single-target spells tend to dispatch them most effectively. Beholders themselves may also destroy gazers on whim, especially if one grows too bold or too independent.",
+				"When gazers start appearing around a ruin or beneath a settlement, sensible people assume something worse is nearby. Strange lights drift through vents, livestock panic at empty corners, and workers report the sensation of being watched from above. A single gazer may be a nuisance, but several usually mean an aberrant intelligence has already begun extending its reach into the walls."
+			]
+		},
+		{
+			"id": "mind_flayer",
+			"icon": "☵",
+			"name": "Mind Flayer (Illithid)",
+			"summary": "A coldly brilliant psychic predator from alien depths, the mind flayer enslaves bodies, edits thought, and feeds on living brains with the calm certainty of a species that regards free will as raw material rather than sacred right.",
+			"content": [
+				"Mind flayers, also called illithids, are one of fantasy's defining images of intellectual horror. They are not terrifying because they are wild but because they are organized, clinical, and certain of their superiority. In most lore they belong to hidden colonies ruled by elder brains, societies in which individual ambition, psychic discipline, and biological domination all merge into one purpose: the harvesting and control of lesser minds.",
+				"An illithid's body is humanoid only in the broadest sense. It stands upright in flowing robes, but its mauve or ashen skin, elongated fingers, and lamprey-like mouth fringed with facial tentacles immediately mark it as something outside natural lineage. Their eyes are often pale and unreadable, their movements unnervingly smooth, and their voices carry either a damp whisper or no audible sound at all when they choose telepathy instead. Even stillness feels predatory on them.",
+				"They are most known for psychic assault and the consumption of brains. A mind flayer can stun prey with a blast of mental force, pick through memories like a burglar in a library, and reduce a willful prisoner to obedient thrall over time. The act of feeding is not merely grotesque but symbolic of everything they represent: knowledge taken by violation, identity reduced to nutrition, and the body treated as a container whose most valuable organ belongs to the hunter.",
+				"Mind flayer culture is built around hierarchy, secrecy, and the suppression of individuality. Colonies operate as vast conspiracies directed by communal intellect, with servants, infiltrators, and enslaved humanoids handling what the illithids consider menial labor. From their own point of view, this is not cruelty but order. They see emotional attachment, political argument, and personal freedom as defects of immature species who have not yet accepted the efficiency of psychic rule.",
+				"Their central struggle lies in dependence and fear of decline. Illithids require intelligent brains to survive, elder brains to coordinate their societies, and hidden infrastructure to protect them from the united hatred of the surface world. They also live under the shadow of lost empires and prophecies of species-level collapse. For all their poise, much of mind flayer planning is driven by the terror that one day they will be hunted the way they once hunted others.",
+				"Their strengths are terrifyingly practical: telepathy, mind control, memory extraction, disciplined spellcraft, and social structures built for conspiracy. An illithid can disable a room before blades clear their sheaths, turn a trusted official into a puppet, or interrogate a captive without leaving visible wounds. Given time, a colony can corrupt governance, criminal networks, and religious institutions simultaneously while remaining physically hidden underground.",
+				"Their enemies are those with unusual mental resilience or traditions built specifically to resist domination. Gith peoples are the classic illithid nemesis in many settings, joined by paladins, psions, and scholars who understand aberrant biology well enough to target its weak points. Sunlit warfare, open rebellion among thralls, and any force capable of exposing a colony before it is ready are all dangerous to them because mind flayers depend on secrecy almost as much as on intellect.",
+				"When mind flayers enter a region, the first symptoms are social rather than monstrous. Influential people begin speaking with eerie similarity, disappearances leave no bodies behind, and conspiracies that should be too careful somehow stay one move ahead of every investigation. By the time tentacled faces are seen in the open, the true invasion has already been underway in dreams, cellars, prisons, and council chambers for months or years."
+			]
+		},
+		{
+			"id": "carrion_crawler",
+			"icon": "⋇",
+			"name": "Carrion Crawler",
+			"summary": "A sewer-born scavenger of tentacles, chitin, and corpse-hunger, the carrion crawler cleans the underworld by paralyzing prey and stripping the dead with a patience that makes dark tunnels feel already claimed.",
+			"content": [
+				"Carrion crawlers are among the least glamorous aberrant creatures, which is precisely why they linger so effectively in fantasy worlds. They are the things that make dungeons, sewers, and battle pits feel biologically active rather than merely haunted. Scholars argue over whether they are true aberrations or some lower horror twisted by deep magic, but most people who meet one care less about taxonomy than about the tentacles already reaching for their face.",
+				"A carrion crawler combines the most uncomfortable traits of worm, centipede, and octopus into one long, chitin-sheathed body. It slithers on rows of hooked legs, carries a lamprey mouth beneath its front segment, and waves clusters of feeding tentacles slick with paralytic secretion. Their coloration tends toward sewer greens, bruised browns, and corpse-pale undersides, the perfect palette for a creature that thrives in rot, refuse, and perpetual damp.",
+				"They are most known for paralysis. A crawler does not need to tear prey apart immediately because a brush from its tentacles can freeze muscles while leaving the victim conscious. This allows the creature to feed at leisure or drag a body back to a nest. In old catacombs and battlefield tunnels, many horror stories begin with someone surviving the first strike only to remain awake while the crawler decides whether they count as fresh meat or future meat.",
+				"Carrion crawlers live where decay is reliable. They haunt drains beneath cities, mushroom caverns below old keeps, charnel pits, and refuse channels that larger predators find too cramped or foul. Their behavior is driven by appetite rather than malice, but they are not mindless. A crawler learns routes, recognizes regular feeding grounds, and often returns to places where plague, war, or poor sanitation produce a steady harvest of flesh.",
+				"Their struggle is competition in the deep places of the world. Carrion is plentiful only until something bigger notices it, and crawlers are eaten by otyughs, trolls, giant vermin, and almost anything strong enough to catch them in open ground. They are also vulnerable to scarcity when a city improves its drainage, burial practice, or patrol discipline. For a creature built around human neglect, civic competence is a real ecological threat.",
+				"Their strengths are obvious in enclosed terrain. They climb walls and ceilings, fit through spaces armored fighters hate, and turn any narrow passage into a paralysis hazard. They are resilient, difficult to flank in tight quarters, and capable of overwhelming isolated prey through simple contact. One crawler is dangerous; several in a sewer line or crypt corridor can make retreat almost impossible.",
+				"Carrion crawlers are countered by fire, reach weapons, and disciplined parties who maintain spacing rather than bunching together in panic. Dwarven tunnel guards, sewer wardens, and undercity hunters know to strike tentacles first and never let a crawler touch exposed skin. Otyughs, gelatinous cubes, and other dungeon scavengers also destroy them when niches overlap, making the underworld's food chain one of their constant checks.",
+				"When carrion crawlers spread beneath a settlement, the warnings are foul but useful. Grave tunnels come up empty, cesspits seem unnaturally active, and missing persons are last seen near drains, oubliettes, or storm channels. Their presence means the place has grown dirty enough, neglected enough, or dead enough for something inhuman to decide the cleanup belongs to it now."
+			]
+		},
+		{
+			"id": "chuul",
+			"icon": "🜄",
+			"name": "Chuul",
+			"summary": "An ancient crustacean horror bred to guard drowned empires and alien ruins, the chuul hunts with crushing claws, sorcerous obedience, and the patient certainty of a thing that outlived the civilization that first commanded it.",
+			"content": [
+				"Chuuls are relic predators from the deep margins of fantasy, creatures that seem engineered rather than born. They are most often associated with sunken cities, forgotten aboleth domains, and marshes where ancient magic never fully dispersed. To encounter a chuul is to feel that some extinct or sleeping intelligence once built guardians too durable to die when their masters did.",
+				"A chuul resembles a monstrous fusion of lobster, mantis, and deep-sea scavenger. Its body is plated in wet, ridged shell, supported by multiple legs that let it scuttle over stone or through reeds with unpleasant speed. Great pincers bracket a face crowded with twitching feelers and smaller grasping appendages, while slick carapace colors range from algae green to black-blue and rust-brown. The sound of a chuul moving, all scrape, click, and drip, is often enough to empty a shoreline at night.",
+				"They are most known as guardians and ambush hunters. A chuul seizes prey with crushing claws, paralyzes or restrains it, and drags it toward water, muck, or waiting masters below. Many stories tie them to aboleths, who use chuuls as jailers and retrieval beasts, but even masterless chuuls retain that same disciplined predatory purpose. They do not thrash like beasts; they apprehend like old soldiers who were told centuries ago to hold a perimeter and never heard the order rescinded.",
+				"Their way of life is one of patient occupation. Chuuls lurk in flooded ruins, estuaries, bog temples, and coastal caverns, remaining motionless for hours or days until sound, vibration, or psychic command tells them to strike. They seem to understand territory in terms of duty rather than ownership. A chuul guards because it was made to guard, and that ancient directive can persist with terrifying purity long after memory, empire, and architecture have crumbled around it.",
+				"Their struggle is obsolescence without release. Many chuuls persist in ecosystems that no longer suit the intelligence that shaped them. Some guard ruins no master will ever revisit; others serve aboleths whose own plans are fragmentary or mad. This leaves them in a strange condition between discipline and abandonment, alien sentries carrying out purpose in a world that no longer explains it.",
+				"A chuul's strengths are armor, amphibious mobility, and sheer control over any fight that happens near water or uneven ground. Their claws can pin armored opponents, their bodies ignore pain that would break mammals, and their resilience lets them absorb punishment while closing distance. In flooded corridors, tidal caverns, and marsh channels, they are brutally efficient because they fight as though land and water are equally valid directions of attack.",
+				"Their natural enemies are lightning-casters, seasoned marsh fighters, and warriors clever enough to deny them the grapple that makes them deadly. Polearms, elevated footing, and dry terrain all reduce a chuul's advantages. Ancient sea powers, dragons of the coast, and rival deep aberrations also kill them when dominion overlaps, but such victories rarely comfort nearby settlements because anything capable of preying on a chuul is dangerous in its own right.",
+				"When chuuls rise in a region, waterways stop feeling domestic. Fishermen find nets torn apart by something stronger than current, shrine steps emerge coated in fresh shell marks, and old drowned foundations begin yielding noises like armored tools dragged over stone. Their presence means the deep past is stirring, and whatever once claimed the marsh, delta, or coast may be reaching upward again through claws that never forgot their orders."
 			]
 		}
 	],

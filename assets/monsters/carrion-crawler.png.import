@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvtxt1jfuxghq"
-path="res://.godot/imported/logo.png-762ed726b0b400e036b2704a8222c3e6.ctex"
+uid="uid://dk1775lbhti47"
+path="res://.godot/imported/carrion-crawler.png-b0892c229580a85240a41e43aa6f7c28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/logo.png"
-dest_files=["res://.godot/imported/logo.png-762ed726b0b400e036b2704a8222c3e6.ctex"]
+source_file="res://assets/monsters/carrion-crawler.png"
+dest_files=["res://.godot/imported/carrion-crawler.png-b0892c229580a85240a41e43aa6f7c28.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dknu13abu3hdu"
-path="res://.godot/imported/goblin.png-a710fcf95e09f90fdaf08a53430afc45.ctex"
+uid="uid://cog6o4lv6dheo"
+path="res://.godot/imported/wraith.png-e3bb57c6b44736d125008272e256509f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/goblin.png"
-dest_files=["res://.godot/imported/goblin.png-a710fcf95e09f90fdaf08a53430afc45.ctex"]
+source_file="res://assets/monsters/wraith.png"
+dest_files=["res://.godot/imported/wraith.png-e3bb57c6b44736d125008272e256509f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bopatqvfoowne"
-path="res://.godot/imported/ogre.png-dcd16f954abbce7dd1aad50b87295612.ctex"
+uid="uid://cpmbep6uhgv1"
+path="res://.godot/imported/banshee.png-c6c7f3007865a485f69c2158fc0e8a97.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/categories/ogre.png"
-dest_files=["res://.godot/imported/ogre.png-dcd16f954abbce7dd1aad50b87295612.ctex"]
+source_file="res://assets/monsters/banshee.png"
+dest_files=["res://.godot/imported/banshee.png-c6c7f3007865a485f69c2158fc0e8a97.ctex"]
 
 [params]
 
